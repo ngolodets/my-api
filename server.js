@@ -9,16 +9,6 @@ app.use(express.urlencoded({extended: false}));
 app.get('/', function(req, res) {
   res.send("everything works!");
 });
-//NO ejs pages! Use res.json to send back data inside the postman
-//Don't forget that routes are collection names
-
-//Make your model - name, fields, data types (strings & integers) -- DONE
-//Run the migrations -- DONE
-//Create one record route -- DONE
-//Read one record route -- DONE
-//Read all records route -- DONE
-//Update one record route -- DONE
-//Delete one record route -- DONE
 
 //GET all songs
 app.get('/songs', function(req, res) {
@@ -71,9 +61,6 @@ app.delete('/songs/:id', function(req, res) {
     res.json(data);
   });
 });
-
-
-
 
 app.listen(3000, function(req, res) {
   console.log("I am listening 🥺 on 3000");
